@@ -61,6 +61,8 @@ The suite covers:
 
 When the tests run, Mochawesome generates an HTML report under [mochawesome-report/mochawesome.html](mochawesome-report/mochawesome.html).
 
+The latest published test report is also available at https://guipastl.github.io/supertest-demo.
+
 ## Local execution summary
 
 Run the full suite locally with:
