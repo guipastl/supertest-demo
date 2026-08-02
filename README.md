@@ -73,4 +73,4 @@ This will execute the Mocha tests and produce a detailed HTML report for review.
 
 ---
 
-Developed with 💚 by [Guilherme](https://www.linkedin.com/in/guipastl).
+Developed with 💚 by [Guilherme](https://www.linkedin.com/in/guipastl). 
