@@ -4,7 +4,9 @@
   "description": "Supertest API testing tool demo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require dotenv/config --reporter mochawesome"
+    "test": "mocha --require dotenv/config --reporter mochawesome --reporter-options html=false,json=true",
+  "report:merge": "mochawesome-merge mochawesome-report/*.json > index.json",
+  "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,8 @@
     "dotenv": "^17.4.2",
     "mocha": "^11.7.6",
     "mochawesome": "^8.0.1",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2",
     "supertest": "^7.2.2"
   }
 }
