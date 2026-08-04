@@ -1,9 +1,11 @@
 const request = require('supertest');
 const expect = require('chai').expect;
+const _ = require('lodash');
 const randomData = require('../fixtures/randomData');
-const config = require('../config')
+const config = require('../config');
 
-describe('API-users', () => {
+_.times(config.ITERATION, () => {
+  describe('API-users', () => {
 
   let userId;
   
@@ -143,4 +145,5 @@ describe('API-users', () => {
         expect(res.body).to.be.empty;
       })      
   })  
+  })
 })

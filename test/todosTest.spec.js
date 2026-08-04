@@ -1,8 +1,10 @@
 const request = require('supertest');
 const expect = require('chai').expect;
-const config = require('../config')
+const _ = require('lodash');
+const config = require('../config');
 
-describe('API-todos', () => {
+_.times(config.ITERATION, () => {
+  describe('API-todos', () => {
 
   let userId;
   
@@ -19,5 +21,6 @@ describe('API-todos', () => {
         expect(res.body[0].due_on).to.include('T00:00:00.000+05:30');
         expect(res.body[0].status).to.be.a('string');
       })      
+  })
   })
 })
